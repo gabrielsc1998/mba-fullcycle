@@ -88,3 +88,4 @@
         - Data;
         - Legality;
         - Scalability;
+    - Is important to define the critical aspects of the architecture and to define the metrics to measure them;
