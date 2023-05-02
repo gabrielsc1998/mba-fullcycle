@@ -37,3 +37,54 @@
 - Conectors and components (ports and adapters);
 - Modules;
 - Allocation;
+
+### Middle out (start with the core)
+
+- Focus on the development of the core and most critical components of a software;
+- Provides flexibility, allowing changes that do not affect the core of the system;
+- Incremental development;
+
+### Architectural Dimensions
+
+- Multidimensional architecture:
+    - Technical:
+        - Technology;
+        - Frameworks;
+        - Components;
+        - Libraries;
+        - Tests;
+        - Abstractions;
+    - Data:
+        - Storage;
+        - Formats;
+        - Models;
+        - Traffic;
+        - Sinchronization;
+    - Security:
+        - Authentication;
+        - Authorization;
+        - Encryption;
+        - Certificates;
+        - Tokens;
+        - Policies;
+        - Proxy;
+        - Logs;
+    - Operation:
+        - Deploy;
+        - Provisioning;
+        - Monitoring;
+        - Logging;
+        - Metrics;
+        - Scaling;
+        - Resilience;
+        - Tests;
+
+- Fitness functions:
+    - It's a mechanism to measure and accompany what is important to the evolution of the architecture with the time;
+    - It's about measuring and accompany elements of an architecture over time, elements like:
+        - Auditibility;
+        - Performance;
+        - Security;
+        - Data;
+        - Legality;
+        - Scalability;
