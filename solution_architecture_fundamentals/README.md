@@ -70,3 +70,29 @@
         - Execution order suggestion;
         - General observations;
 
+### Lehmans Laws
+
+- Laws that describe the evolution of software systems;
+- The laws are based on the observation of the evolution of software systems;
+
+    1. Law of Continuing Change
+        - A software system must change or become progressively less useful in a changing environment;
+    2. Law of Increasing Complexity
+        - As a software system evolves, its complexity increases unless work is done to maintain or reduce it;
+    3. Law of Self-Regulation
+        - Software evolution is a self-regulating process. Software evolution processes are feedback systems that maintain an equilibrium state expressed in terms of a measure of the software;
+    4. Law of Conservation of Organizational Stability
+        - The average effective global activity rate in a large system is invariant over the lifetime of the system;
+    5. Law of Conservation of Familiarity
+        - The incremental change in each release of a software system is roughly constant for a given system;
+    6. Law of Continuing Growth
+        - The functional content of a software system must be continually increased to maintain user satisfaction over its lifetime;
+    7. Law of Declining Quality
+        - The quality of a software system will appear to be declining unless it is rigorously maintained and adapted to operational environment changes;
+    8. Law of Feedback System
+        - Software evolution processes are multi-level, multi-loop, multi-agent feedback systems and must be treated as such to achieve significant improvement over any reasonable base;
+
+### Coupling
+
+- afferent: incoming (more stable);
+- efferent: outgoing (less stable because it depends on the afferent);
