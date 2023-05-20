@@ -89,3 +89,9 @@
         - Legality;
         - Scalability;
     - Is important to define the critical aspects of the architecture and to define the metrics to measure them;
+    - TDR: Technical Debit Ratio;
+    - Consolidation: is a technique to understand which points of improvement you consider most important to measure your fitness functions;
+
+   
+
+
