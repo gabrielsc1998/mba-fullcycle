@@ -36,7 +36,7 @@
 ## Practical example
 
 - Problem: a system to send tickets to events;
-- Functional Requirements:estimativasconvertion rate
+- Functional Requirements:
 
   - Core functionalities:
     - buy a ticket;
