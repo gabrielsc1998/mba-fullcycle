@@ -1,0 +1,35 @@
+## MBA Full Cycle - Patterns of Enterprise Application Architecture
+
+- Base: https://martinfowler.com/books/eaa.html
+- There are many patterns that can be used to solve problems in software development;
+
+- Layering:
+    - Separation of responsibilities;
+    - Abstration;
+        - how much more abstract, more complex, but more flexible (in general);
+        - how much coupling, more complex and less flexible;
+    - Layer vs Tier:
+        - Layer:
+            - Logical separation;
+            - Ex: Presentation, Business, Data;
+        - Tier:
+            - Physical separation;
+            - Ex: Web, Application, Database;
+    - 3 layers architecture:
+        - Layers:
+            - Presentation:
+                - User interface;
+                    - Ex: Web, Mobile, Desktop;
+                - Formats:
+                    - Ex: HTML, JSON, XML;
+            - Domain:
+                - Business rules;
+                    - Ex: Business rules, Business services;
+            - Data:
+                - Data persistence;
+                    - Ex: Database, File, Cache;
+                - Message:
+                    - Ex: Kafka, RabbitMQ;
+        - Flux: Presentation -> Domain -> Data -> Domain -> Presentation;
+            - Domain and data should never depend on presentation;
+            - If domain depends on presentation, it will generate instability in the core of the system;

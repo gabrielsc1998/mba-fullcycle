@@ -86,3 +86,41 @@
 
 ![Capacity plan](./img/capacity-plan.png "Capacity plan")
   
+- System Design - practice:
+
+  - SPOF (Single Point of Failure):
+    - is a component of a system that, if it fails, will stop the entire system;
+    - example:
+      - a single database;
+      - a single server;
+      - a single load balancer;
+    - a SPOF can be avoided with a composition pattern;
+
+  - Composition Pattern:
+    - is to compose a set of resources to meet some demand within the design/software;
+    - example:
+      - load balancer and replications;
+    - a composition pattern avoids SPOF (Single Point of Failure) in the following way:
+      - using the config called "n + x", where "n" is the number of resources needed to meet the demand and "x" is the number of additional resources, usually one for maintenance and one for updating;
+      - example:
+        - if we have 3 servers in a cluster, and one is under maintenance and the other is being updated, it is necessary for the other server to support the full workload, even with a degraded response time;
+
+  - Disaster Recovery (DR):
+    - it is a critical scenario where it is necessary to have a system resilient to failures;
+    - the more critical, the less dehydrated, that is, what is the minimum pre-provisioning condition to withstand the workload; 
+    - example:
+      - a backup of the database;
+      - a backup of the code;
+      - a backup of the infrastructure;
+      - multizonal and multi-regional services; 
+    - a DR can be avoided with a composition pattern;
+  
+  - RPO (Recovery Point Object):
+    - is a control method for calculating the threshold amount of data an organization would tolerate losing in the event of a crash or outage;
+  
+  - RTO (Recovery Time Objective):
+    - maximum period of time that the system will take to return to operation after a stop or breakdown;
+
+  - About RPO and RTO: 
+    - RPO and RTO define the "x" of the "n + x" composition pattern;
+    - the smaller RPO and define, the greater the investment;
