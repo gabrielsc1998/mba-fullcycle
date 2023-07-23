@@ -12,30 +12,32 @@
     - DDD is contextual, so, there so many different contexts (domains - spheres of knowledge) and each one has its own language;
     - The language used in the domain should be the same used in the code and in the documentation;
 
-- Bounded Context:
-    - A bounded context is a space that has its own language (ubiquitous language) and models;
-    - It's a space in a big and complex "problem" that have things in common and cover an area of ​​knowledge;
-    - Bounded contexts have a loose coupling;
+- Strategical Design:
+    
+    - Bounded Context:
+        - A bounded context is a space that has its own language (ubiquitous language) and models;
+        - It's a space in a big and complex "problem" that have things in common and cover an area of ​​knowledge;
+        - Bounded contexts have a loose coupling;
 
-- Domain:
-    - Is a sphere of knowledge;
-    - Is a space of a problem;
+    - Domain:
+        - Is a sphere of knowledge;
+        - Is a space of a problem;
 
-- Subdomain:
-    - Is a part of a domain;
-    - Is a space of a problem;
+    - Subdomain:
+        - Is a part of a domain;
+        - Is a space of a problem;
 
-    - Types of subdomain:
-        - Core Domain:
-            - is a subdomain that has primary importance for the organization;
-            - must be implemented perfectly, as it provides a business advantage;
-        - Supporting Domain:
-            - important aspects of the business, but not the core;
-            - suports the core domain;
-        - Generic Domain:
-            - is a subdomain that has no strategic importance for the organization;
+        - Types of subdomain:
+            - Core Domain:
+                - is a subdomain that has primary importance for the organization;
+                - must be implemented perfectly, as it provides a business advantage;
+            - Supporting Domain:
+                - important aspects of the business, but not the core;
+                - suports the core domain;
+            - Generic Domain:
+                - is a subdomain that has no strategic importance for the organization;
 
-- Context Mapping:
+    - Context Mapping:
     - Is a technique to map the bounded contexts and their relationships;
     - Types of relationships:
         - Partnership:
@@ -61,4 +63,28 @@
         - Open Host Service:
             - is a integration style as a relationship where there is one upstream and many downstreams;
             - example: a team can provide an API to many teams;
-        
+
+- Tactial Design:
+
+    - Module:
+        - is something like a representation of a bounded context in a software;
+        - the granularity of a module is a decision of the team;
+        - is a way to organize the software by clear names;
+
+    - Entity:
+        - is a type of object that has an identity, lifecycle, state and behavior;
+
+    - Aggregate:
+        - is a type of entity that provides a transactional context (database) for a group of objects;
+    
+    - Value Object: 
+        - is a type of object that has no identity;
+        - example: a class of Address, it has no identity, because if the number changes, it means that the address is another one;
+
+    - Domain Events:
+        - is a type of event that represents something that happened in the domain;
+        - is a way to communicate between bounded contexts;
+
+    - Domain Services:
+        - is a type of service that represents a domain operation;
+        - is a way to communicate between bounded contexts;
